@@ -1,0 +1,16 @@
+  function nul (num) {
+                var count = num;
+                var n = function(l){
+                    count *= l;
+                    return n
+                }
+                n.valueOf = function(){
+                    return count
+                }
+                return n
+            }
+            var A = nul(2);
+            var A1 = nul(2)(3);
+            console.log(A)
+            console.log(A1)
+}
